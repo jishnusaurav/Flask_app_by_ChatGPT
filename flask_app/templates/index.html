@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+  </head>
+  <body>
+    <form method="post">
+      {{ form.hidden_tag() }}
+      <div>
+        {{ form.name.label }} {{ form.name(size=20) }}
+      </div>
+      <div>
+        {{ form.submit() }}
+      </div>
+    </form>
+  </body>
+</html>
